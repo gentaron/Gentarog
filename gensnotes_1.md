@@ -97,15 +97,19 @@ The persona is not a mask. It is an amplification — a version of my intellectu
 
 ### Genesis Vault
 
-Genesis Vault is the media project I have been building for years. As of the most recent count:
+Genesis Vault is the media project I have been building for years. Note is the platform for Genesis Vault. As of the most recent count:
 
-- **Note:** 1,200 articles
-- **Substack:** 138 articles
-- **Patreon:** 1,070 posts
-- **Audius:** 260 songs
-- **Pixiv:** 850 posts
+**Active platforms:**
+- **Genesis Vault (Note):** 2,000+ articles — Japanese-language primary output and core Mina Eureka canon
+- **Audius:** 260 songs — Mina Eureka as vocalist persona, decentralized music streaming
+- **Suno:** 130+ songs — Actively mass-producing music as Mina Eureka (https://suno.com/persona/e02f9d94-2364-46a5-bd9a-1f88475fb792)
 
-Combined with the Genesis Vault count of 1,800+ articles, the total creative output across platforms exceeds **3,500 individual works**. This is not a side project. This is a life's work running parallel to the professional track.
+**Inactive platforms:**
+- **Substack:** Currently suspended, zero stock
+- **Patreon:** Currently suspended
+- **Pixiv:** Currently suspended
+
+Active creative output across platforms exceeds **2,390 individual works**. This is not a side project. This is a life's work running parallel to the professional track.
 
 **Content domains include:**
 - Philosophy (Stoicism, Talmudic thought, ethics of meaning and inequality)
@@ -134,9 +138,9 @@ The goal is an algorithmic-independent economic and cultural zone — a creative
 
 ---
 
-## 06 | Music — 260 Songs on Audius
+## 06 | Music — Audius + Suno
 
-The music dimension of the creative output is often the most surprising to people who encounter Genesis Vault as a writing project first. I have released 260 tracks on Audius, the decentralized music streaming platform, under the Mina Eureka persona as vocalist and creative director. Music generation via Suno AI has been part of the workflow, with Mina as the conceptual vocalist identity.
+The music dimension of the creative output is often the most surprising to people who encounter Genesis Vault as a writing project first. I have released 260 tracks on Audius, the decentralized music streaming platform, under the Mina Eureka persona as vocalist and creative director. In addition, I am actively mass-producing music on **Suno** (https://suno.com/persona/e02f9d94-2364-46a5-bd9a-1f88475fb792) as Mina Eureka, with 130+ published songs and growing. Suno is the primary active music production platform.
 
 Music, for me, is not separate from the writing — it is writing for a different sensory channel. The same thematic preoccupations (meaning, technology, civilizational drift, the individual navigating inhuman-scale systems) appear in sonic form.
 
@@ -212,16 +216,16 @@ I have organized certain events in my history under the category of "incidents" 
 
 ## 11 | Platform Presence — Where to Find the Work
 
-| Platform | Volume | Focus |
-|---|---|---|
-| Note | 1,200 articles | Japanese-language primary output |
-| Genesis Vault (Netlify) | 1,800+ articles | Core Mina Eureka canon |
-| Substack | 138 articles | English/curated content |
-| Patreon | 1,070 posts | Member-exclusive content |
-| Audius | 260 songs | Music as Mina Eureka |
-| Pixiv | 850 posts | Visual/creative content |
+| Platform | Volume | Focus | Status |
+|---|---|---|---|
+| Genesis Vault (Note) | 2,000+ articles | Japanese-language primary output & core canon | Active |
+| Audius | 260 songs | Music as Mina Eureka (decentralized) | Active |
+| Suno | 130+ songs | AI-composed music as Mina Eureka | Active |
+| Substack | — | English/curated content | Suspended |
+| Patreon | — | Member-exclusive content | Suspended |
+| Pixiv | — | Visual/creative content | Suspended |
 
-Total documented creative output: **5,318+ works** across six platforms.
+Total active creative output: **2,390+ works** across three active platforms.
 
 ---
 
