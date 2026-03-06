@@ -2,93 +2,187 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="About" description="Gentaro / Mina Eureka について">
+<BaseLayout title="About" description="Gentaro について — 工学修士、カスタマーサポート専門家、ライター、エージェントAIの実験者。マレーシア在住。">
   <a class="back-link" href="/">← ホームへ</a>
 
   <div class="about-content">
-    <h1 style="font-family: var(--font-serif); font-size: 1.85rem; margin-bottom: 0.5rem;">About</h1>
-    <p style="color: var(--color-text-muted); font-style: italic; margin-bottom: 2rem;">"Veni, Vidi, Vici." — I came, I saw, I conquered.</p>
 
-    <h2>Who Is Gentaro?</h2>
-    <p>
-      Gentaro（1997年2月17日生まれ、日本）は、バイリンガルライター、工学系出身のエンジニア、現在はカスタマーサポートの専門家、そして創造的宇宙の建築家。
-      マレーシア・サイバージャヤを拠点に、<strong>Mina Eureka</strong>（ミーナ・エウレカ）というペルソナのもと活動している。
-    </p>
-    <p>
-      本名 Wilhelmina Eureka Ernst。架空のメガシティ「ギガポリス」を舞台にした思索的・哲学的な文章を書き続けている。
-      GentaroとMinaの間の線は意図的に曖昧にされている——一方はBooking.comのカスタマーサポートチケットに答えているサイバージャヤの男であり、
-      もう一方は1,800本以上の記事を書き、260曲を作曲し、十数のプラットフォームにわたってマルチメディアの創造的帝国を築いた声だ。
-      両方とも本物。両方とも自分。
+    <!-- ===== GENTARO ===== -->
+    <h1 class="about-h1">Gentaro について</h1>
+    <p class="about-lead">
+      1997年2月17日、日本生まれ。現在はマレーシア・サイバージャヤ在住。
+      工学修士号を持つエンジニアであり、バイリンガルのライターであり、カスタマーサポートの実務家だ。
     </p>
 
-    <h2>Mina Eureka とは</h2>
+    <h2>経歴</h2>
     <p>
-      Mina Eureka（ミーナ・エウレカ）は、フルネーム Wilhelmina Eureka Ernst。
-      ギガポリスを拠点とした29歳のブロガー・哲学者。青い長い髪を持ち、Lorenzio International University でAIを学んだ。
-      モットーは <em>"来た、見た、勝った"</em>（Veni, Vidi, Vici）。
+      山形大学工学部（2015–2019）を経て、茨城大学大学院工学研究科（2019–2021）で修士号を取得。
+      工学の訓練は体系的で反証可能な思考の型を与えてくれた——その枠組みを、哲学・文化・意味という
+      工学プログラムが明示的に除外する領域に応用することに、それ以来の時間を費やしてきた。
     </p>
     <p>
-      三つの名前にはそれぞれ哲学が込められている: <em>Mina</em>（自分のものを大切に）、<em>Eureka</em>（発見、洞察の閃き）、<em>Ernst</em>（真剣さ、誠実さ、アイデアを最後まで追い求める意志）。
+      2015年のACL（前十字靭帯）断裂と一年間のリハビリが転機だった。
+      身体的な無力さが内側へとエネルギーを向け、アイデアとデジタル文化の世界が
+      一次的な生息地になり始めた年だ。
     </p>
 
-    <h2>Genesis Vault</h2>
-    <p>
-      Genesis Vault は、Minaが数年かけて構築してきたメディアプロジェクト。最新のカウントによれば:
-    </p>
-    <ul>
-      <li>Note: 1,200本の記事</li>
-      <li>Substack: 138本の記事</li>
-      <li>Patreon: 1,070件の投稿</li>
-      <li>Audius: 260曲</li>
-      <li>Pixiv: 850件の投稿</li>
-      <li>Genesis Vault (Netlify): 1,800本以上の記事</li>
-    </ul>
-    <p>
-      6つのプラットフォームにわたる総創作物: <strong>5,318点以上</strong>。
-      これはサイドプロジェクトではない。職業的な軌跡と並行して走っている、人生の仕事だ。
-    </p>
-
-    <h2>コンテンツ領域</h2>
-    <ul>
-      <li>哲学（ストア哲学、タルムード思想、意味と不平等の倫理学）</li>
-      <li>地政学（イラン、サヘル地域、東南アジアのダイナミクス）</li>
-      <li>テクノロジーとAI（ツール評価、AI民主化、自動化の労働への影響）</li>
-      <li>金融・経済（日経分析、暗号市場のダイナミクス、Web3の失敗）</li>
-      <li>社会評論（BPO産業、Z世代の保守主義、K-popファン文化、投資詐欺）</li>
-      <li>創作フィクション（ギガポリス宇宙、量子経済学者のAltoや分散型AIのLuminaを含むキャラクター）</li>
-    </ul>
-
-    <h2>現在地</h2>
-    <p>
-      <strong>場所:</strong> サイバージャヤ / クアラルンプール、マレーシア<br />
-      <strong>主な職業:</strong> カスタマーサポートスペシャリスト、Concentrix（Booking.com、日本語バイリンガル）<br />
-      <strong>創作的役割:</strong> Genesis Vault / Mina Eureka ユニバースのライター、作曲家、建築家
-    </p>
-
-    <h2>哲学的志向</h2>
-    <blockquote>
-      「宇宙は絶えず変化する。意味は見つけるものではなく、構築するものだ。」
-    </blockquote>
-    <p>主な影響:</p>
-    <ul>
-      <li>マルクス・アウレリウス『瞑想録』— 最もよく立ち返る本。出来事と解釈の間の隙間、変化としての宇宙、自己が唯一本当にコントロールできる管轄区域という、ストア哲学的主張。</li>
-      <li>タルムード的思考 — 宗教的実践としてではなく、知的方法論として。</li>
-      <li>Web3と暗号 — イデオロギーとしてではなく、分権化、価値、信頼を考えるための実験室として。</li>
-    </ul>
-
-    <h2>プラットフォーム一覧</h2>
+    <h2>職歴</h2>
     <table>
       <thead>
-        <tr><th>プラットフォーム</th><th>量</th><th>フォーカス</th></tr>
+        <tr><th>期間</th><th>会社</th><th>役割</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>2021.04 – 2022.03</td><td>ITAPEX Corporation</td><td>社内エンジニア</td></tr>
+        <tr><td>2022.09 – 2022.10</td><td>Teleperformance</td><td>Apple カスタマーサポート</td></tr>
+        <tr><td>2023.04 – 2023.07</td><td>Tech Mahindra</td><td>Amazon カスタマーサポート</td></tr>
+        <tr><td>2024.01 – 現在</td><td>Concentrix</td><td>Booking.com 日本語サポート</td></tr>
+      </tbody>
+    </table>
+    <p>
+      日本語・英語バイリンガルで、グローバルテックプラットフォームのカスタマーサポートに特化した
+      キャリアは偶然ではない。技術的製品知識・言語レバレッジ・顧客心理という三つの要素が交差する
+      希少なポジションを、テクニカルセールスへの足がかりとして意図的に積み上げている。
+    </p>
+
+    <h2>創作活動 — Genesis Vault</h2>
+    <p>
+      オンラインでは <strong>Mina Eureka</strong> というペルソナのもとで書いている。
+      フルネーム Wilhelmina Eureka Ernst——架空のメガシティ「ギガポリス」を舞台にした
+      思索的・哲学的な文章の声だ。ペルソナは仮面ではなく増幅装置——
+      実名と実顔が課す社会的制約から解放された、知的な声の純化形態だ。
+    </p>
+    <table>
+      <thead>
+        <tr><th>プラットフォーム</th><th>量</th><th>内容</th></tr>
       </thead>
       <tbody>
         <tr><td>Note</td><td>1,200本</td><td>日本語メインアウトプット</td></tr>
-        <tr><td>Genesis Vault</td><td>1,800本+</td><td>Mina Eureka コア作品</td></tr>
-        <tr><td>Substack</td><td>138本</td><td>英語/厳選コンテンツ</td></tr>
-        <tr><td>Patreon</td><td>1,070件</td><td>メンバー限定コンテンツ</td></tr>
-        <tr><td>Audius</td><td>260曲</td><td>Mina Eureka として音楽</td></tr>
-        <tr><td>Pixiv</td><td>850件</td><td>ビジュアル/創作コンテンツ</td></tr>
+        <tr><td>Genesis Vault</td><td>1,800本+</td><td>コア作品集</td></tr>
+        <tr><td>Substack</td><td>138本</td><td>英語・厳選コンテンツ</td></tr>
+        <tr><td>Patreon</td><td>1,070件</td><td>メンバー限定</td></tr>
+        <tr><td>Audius</td><td>260曲</td><td>Suno AI 使用・作曲</td></tr>
+        <tr><td>Pixiv</td><td>850件</td><td>ビジュアル・創作</td></tr>
       </tbody>
     </table>
+    <p>総創作物: <strong>5,318点以上</strong>。これはサイドプロジェクトではない。人生の仕事だ。</p>
+
+    <h2>哲学的志向</h2>
+    <blockquote>「宇宙は絶えず変化する。意味は見つけるものではなく、構築するものだ。」</blockquote>
+    <ul>
+      <li><strong>マルクス・アウレリウス『瞑想録』</strong> — 出来事と解釈の間の隙間。変化としての宇宙。</li>
+      <li><strong>タルムード的思考</strong> — 宗教的実践ではなく知的方法論として。</li>
+      <li><strong>Web3・暗号</strong> — 分権化・価値・信頼の構造的脆弱性を考える実験室として。</li>
+    </ul>
+
+    <hr class="about-divider" />
+
+    <!-- ===== AGENT AI ===== -->
+    <h2 id="agent-ai" class="agent-ai-heading">
+      <span class="agent-icon">🤖</span> エージェントAI（Agent AI）とは
+    </h2>
+    <p>
+      このブログは <strong>エージェントAI</strong> によって毎日更新される仕組みを持つ。
+      エージェントAIを理解することは、このサイトの動作原理を理解することでもある。
+    </p>
+
+    <h3>エージェントAIの定義</h3>
+    <p>
+      エージェントAI（Agentic AI）とは、単一の質問に答えるだけのチャットボットを超えた、
+      <strong>自律的に目標を達成するAIシステム</strong>のことだ。
+    </p>
+    <p>
+      従来のAI（例: ChatGPTへの一問一答）は「入力 → 出力」の単純な変換だ。
+      エージェントAIは異なる——目標を与えられると、自らが持つ<strong>ツール群</strong>を使いながら
+      複数ステップのタスクを計画・実行・修正し、最終的な成果を出す。
+    </p>
+
+    <div class="agent-comparison">
+      <div class="comparison-col">
+        <h4>通常のAI</h4>
+        <ul>
+          <li>質問に答える</li>
+          <li>単一の入出力</li>
+          <li>ツールなし</li>
+          <li>人間が次の手を決める</li>
+        </ul>
+      </div>
+      <div class="comparison-col comparison-col--accent">
+        <h4>エージェントAI</h4>
+        <ul>
+          <li>目標を達成する</li>
+          <li>多ステップの行動ループ</li>
+          <li>ファイル読書・コード実行・Web検索など</li>
+          <li>自らが次の手を判断・実行</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>このブログでの使い方</h3>
+    <p>
+      このブログは <strong>Vercel AI SDK</strong>（<code>ai</code> パッケージ）と
+      <strong>@ai-sdk/anthropic</strong> を使って構築されている。
+      毎日 GitHub Actions が自動実行し、以下のフローで記事を生成する:
+    </p>
+
+    <div class="flow-diagram">
+      <div class="flow-item">
+        <span class="flow-badge">Source</span>
+        <code>gensnotes_*.md</code>
+        <p>私の自己紹介・経歴・思想をまとめたノート</p>
+      </div>
+      <div class="flow-connector">↓</div>
+      <div class="flow-item">
+        <span class="flow-badge">Script</span>
+        <code>scripts/auto-post.mjs</code>
+        <p>ノートを読み込み、文体とタイトルを抽出</p>
+      </div>
+      <div class="flow-connector">↓</div>
+      <div class="flow-item flow-item--ai">
+        <span class="flow-badge flow-badge--ai">AI</span>
+        <code>generateText({ model: anthropic('claude-opus-4-6') })</code>
+        <p>Vercel AI SDK でClaudeに記事生成を依頼。失敗時はテンプレートフォールバック。</p>
+      </div>
+      <div class="flow-connector">↓</div>
+      <div class="flow-item">
+        <span class="flow-badge">Output</span>
+        <code>src/content/posts/YYYY-MM-DD-*.md</code>
+        <p>frontmatter付きMarkdownをgit commit & push → 静的サイト自動ビルド</p>
+      </div>
+    </div>
+
+    <h3>なぜエージェントAIを使うのか</h3>
+    <p>
+      私がエージェントAIに興味を持つ理由は技術的な好奇心だけではない。
+      これは <strong>アルゴリズム非依存の創造的インフラ</strong> を構築するという哲学的選択だ。
+    </p>
+    <ul>
+      <li>プラットフォームの恩恵に依存しない、自分のコンテンツ配信基盤を持つ</li>
+      <li>AIを使いながらも、AIに書かせた内容の責任は自分が取る（ソースはgensnotesという自分の言葉）</li>
+      <li>工学的な思考（自動化・システム設計）とライターとしての思考の統合</li>
+    </ul>
+
+    <h3>使用技術スタック</h3>
+    <table>
+      <thead>
+        <tr><th>技術</th><th>役割</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Astro 5</td><td>静的サイトジェネレーター / Content Collections</td></tr>
+        <tr><td>Vercel AI SDK (<code>ai</code>)</td><td>AIモデル呼び出しの統一インターフェース</td></tr>
+        <tr><td><code>@ai-sdk/anthropic</code></td><td>Anthropic Claude プロバイダー</td></tr>
+        <tr><td>Claude claude-opus-4-6</td><td>記事生成AIモデル（Anthropic）</td></tr>
+        <tr><td>GitHub Actions</td><td>毎日 19:30 MYT に自動実行</td></tr>
+        <tr><td>Markdown + frontmatter</td><td>データストア（DBなし・サーバーレス）</td></tr>
+      </tbody>
+    </table>
+
+    <p class="agent-note-box">
+      <strong>Vercel AI SDK について:</strong> Vercel が提供するオープンソースのTypeScript SDK。
+      OpenAI・Anthropic・Google など複数のAIプロバイダーを統一した API で扱える。
+      <code>generateText()</code>・<code>streamText()</code>・<code>generateObject()</code> などの
+      関数でLLMの呼び出しを簡潔に記述できる。このブログでは Anthropic の Claude claude-opus-4-6 を
+      使用している。
+    </p>
+
   </div>
 </BaseLayout>

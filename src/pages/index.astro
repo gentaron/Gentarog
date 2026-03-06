@@ -8,11 +8,73 @@ const posts = allPosts.sort((a, b) => b.data.date.getTime() - a.data.date.getTim
 ---
 
 <BaseLayout title="ホーム">
-  <div class="hero">
-    <h1>Gentarog</h1>
-    <p class="tagline">"Live your eureka moments with full seriousness." — Mina Eureka</p>
-  </div>
 
+  <!-- プロフィールカード -->
+  <section class="profile-card">
+    <div class="profile-avatar">G</div>
+    <div class="profile-info">
+      <h1 class="profile-name">Gentaro</h1>
+      <p class="profile-bio">
+        工学修士 / カスタマーサポート専門家 / ライター<br />
+        マレーシア・サイバージャヤ在住 · 1997年生まれ・日本
+      </p>
+      <div class="profile-tags">
+        <span class="tag">エンジニアリング</span>
+        <span class="tag">哲学</span>
+        <span class="tag">Agent AI</span>
+        <span class="tag">Genesis Vault</span>
+        <span class="tag">マレーシア</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Agent AIの紹介 -->
+  <section class="agent-section" id="agent-ai-intro">
+    <h2 class="agent-section-title">
+      <span class="agent-icon">🤖</span> このブログとエージェントAI
+    </h2>
+    <div class="agent-body">
+      <p>
+        このブログは <strong>エージェントAI（Agent AI）</strong> によって自動的に更新されている。
+        毎朝、AIエージェントが私の自己紹介ノート（gensnotes）を読み込み、
+        <strong>Vercel AI SDK</strong> 経由で <strong>Claude claude-opus-4-6</strong>（Anthropic）に投げ、
+        記事を生成して GitHub にコミットする。pushするだけで静的サイトがビルド・公開される。
+      </p>
+      <div class="agent-flow">
+        <div class="flow-step">
+          <span class="flow-num">1</span>
+          <div>
+            <strong>gensnotes を読み込む</strong>
+            <p>私の経歴・思想・創作活動をまとめた Markdown ファイルが起点</p>
+          </div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+          <span class="flow-num">2</span>
+          <div>
+            <strong>Claude に投げる</strong>
+            <p>Vercel AI SDK の <code>generateText()</code> で claude-opus-4-6 を呼び出し</p>
+          </div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+          <span class="flow-num">3</span>
+          <div>
+            <strong>Markdown を書き出す</strong>
+            <p>frontmatter + 本文を <code>src/content/posts/</code> に自動保存・git commit</p>
+          </div>
+        </div>
+      </div>
+      <p class="agent-note">
+        エージェントAIとは、単なるチャットボットを超えた存在——
+        自ら判断し、ツールを使い、タスクを完遂する自律的なAIシステムだ。
+        このブログはその実験場でもある。
+        <a href="/about#agent-ai">詳しくはAboutページへ →</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- 記事一覧 -->
   <p class="section-heading">最新の記事</p>
 
   <div class="post-list">
@@ -32,4 +94,5 @@ const posts = allPosts.sort((a, b) => b.data.date.getTime() - a.data.date.getTim
       ))
     )}
   </div>
+
 </BaseLayout>

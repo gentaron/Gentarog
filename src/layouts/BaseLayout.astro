@@ -1,10 +1,12 @@
 ---
+import '../styles/global.css';
+
 interface Props {
   title: string;
   description?: string;
 }
 
-const { title, description = 'Gentaro / Mina Eureka — a blog about ideas, life, and creative universes.' } = Astro.props;
+const { title, description = 'Gentaro — エンジニア、ライター、エージェントAIの探求者。マレーシア在住。' } = Astro.props;
 ---
 
 <!doctype html>
@@ -15,14 +17,14 @@ const { title, description = 'Gentaro / Mina Eureka — a blog about ideas, life
     <meta name="description" content={description} />
     <title>{title} | Gentarog</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="stylesheet" href="/src/styles/global.css" />
   </head>
   <body>
     <nav>
-      <a class="nav-brand" href="/">Gentarog</a>
+      <a class="nav-brand" href="/">Gentaro</a>
       <ul class="nav-links">
-        <li><a href="/">記事</a></li>
+        <li><a href="/">ホーム</a></li>
         <li><a href="/about">About</a></li>
+        <li><a href="/about#agent-ai">Agent AI</a></li>
       </ul>
       <button class="theme-toggle" id="theme-toggle" aria-label="テーマ切替">🌙</button>
     </nav>
@@ -32,7 +34,8 @@ const { title, description = 'Gentaro / Mina Eureka — a blog about ideas, life
     </main>
 
     <footer>
-      <p>© {new Date().getFullYear()} Gentaro / Mina Eureka — <em>"Veni, Vidi, Vici."</em></p>
+      <p>© {new Date().getFullYear()} Gentaro — エンジニア / ライター / マレーシア在住</p>
+      <p class="footer-sub">Powered by Astro · Vercel AI SDK · Claude claude-opus-4-6</p>
     </footer>
 
     <script>
