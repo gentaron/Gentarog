@@ -53,18 +53,18 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </p>
     <table>
       <thead>
-        <tr><th>プラットフォーム</th><th>量</th><th>内容</th></tr>
+        <tr><th>プラットフォーム</th><th>量</th><th>内容</th><th>状態</th></tr>
       </thead>
       <tbody>
-        <tr><td>Note</td><td>1,200本</td><td>日本語メインアウトプット</td></tr>
-        <tr><td>Genesis Vault</td><td>1,800本+</td><td>コア作品集</td></tr>
-        <tr><td>Substack</td><td>138本</td><td>英語・厳選コンテンツ</td></tr>
-        <tr><td>Patreon</td><td>1,070件</td><td>メンバー限定</td></tr>
-        <tr><td>Audius</td><td>260曲</td><td>Suno AI 使用・作曲</td></tr>
-        <tr><td>Pixiv</td><td>850件</td><td>ビジュアル・創作</td></tr>
+        <tr><td>Genesis Vault (Note)</td><td>2,000本+</td><td>日本語メインアウトプット・コア作品集</td><td>稼働中</td></tr>
+        <tr><td>Audius</td><td>260曲</td><td>Mina Eureka 名義・楽曲配信</td><td>稼働中</td></tr>
+        <tr><td><a href="https://suno.com/persona/e02f9d94-2364-46a5-bd9a-1f88475fb792">Suno</a></td><td>130曲+</td><td>Mina Eureka 名義・AI作曲量産中</td><td>稼働中</td></tr>
+        <tr><td>Substack</td><td>—</td><td>英語コンテンツ</td><td>停止中</td></tr>
+        <tr><td>Patreon</td><td>—</td><td>メンバー限定</td><td>停止中</td></tr>
+        <tr><td>Pixiv</td><td>—</td><td>ビジュアル・創作</td><td>停止中</td></tr>
       </tbody>
     </table>
-    <p>総創作物: <strong>5,318点以上</strong>。これはサイドプロジェクトではない。人生の仕事だ。</p>
+    <p>アクティブな創作物: <strong>2,390点以上</strong>。これはサイドプロジェクトではない。人生の仕事だ。</p>
 
     <h2>哲学的志向</h2>
     <blockquote>「宇宙は絶えず変化する。意味は見つけるものではなく、構築するものだ。」</blockquote>
@@ -117,11 +117,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
     </div>
 
-    <h3>このブログでの使い方</h3>
+    <h3>4体のエージェントAI — 役割分担アーキテクチャ</h3>
     <p>
       このブログは <strong>Vercel AI SDK</strong>（<code>ai</code> パッケージ）と
-      <strong>@ai-sdk/anthropic</strong> を使って構築されている。
-      毎日 GitHub Actions が自動実行し、以下のフローで記事を生成する:
+      <strong>@ai-sdk/anthropic</strong> を使い、<strong>4体のAIエージェント</strong>が
+      役割分担して毎日の記事を自動生成する。
     </p>
 
     <div class="flow-diagram">
@@ -131,16 +131,24 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <p>私の自己紹介・経歴・思想をまとめたノート</p>
       </div>
       <div class="flow-connector">↓</div>
-      <div class="flow-item">
-        <span class="flow-badge">Script</span>
-        <code>scripts/auto-post.mjs</code>
-        <p>ノートを読み込み、文体とタイトルを抽出</p>
+      <div class="flow-item flow-item--ai">
+        <span class="flow-badge flow-badge--ai">Agent 1: Planner</span>
+        <p>gensnotes を分析し、今日のテーマ・切り口・構成案を決定する「企画編集長」</p>
       </div>
       <div class="flow-connector">↓</div>
       <div class="flow-item flow-item--ai">
-        <span class="flow-badge flow-badge--ai">AI</span>
-        <code>{"generateText({ model: anthropic('claude-opus-4-6') })"}</code>
-        <p>Vercel AI SDK でClaudeに記事生成を依頼。失敗時はテンプレートフォールバック。</p>
+        <span class="flow-badge flow-badge--ai">Agent 2: Writer</span>
+        <p>企画に基づき Mina Eureka の声で本文を執筆する「ゴーストライター」</p>
+      </div>
+      <div class="flow-connector">↓</div>
+      <div class="flow-item flow-item--ai">
+        <span class="flow-badge flow-badge--ai">Agent 3: Critic</span>
+        <p>文体・論理・トーンを検証し、改善指示を出す「編集者」</p>
+      </div>
+      <div class="flow-connector">↓</div>
+      <div class="flow-item flow-item--ai">
+        <span class="flow-badge flow-badge--ai">Agent 4: Publisher</span>
+        <p>frontmatter 生成・品質チェック・ファイル書き出しを行う「出版担当」</p>
       </div>
       <div class="flow-connector">↓</div>
       <div class="flow-item">
