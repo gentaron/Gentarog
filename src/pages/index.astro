@@ -1,0 +1,35 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostCard from '../components/PostCard.astro';
+
+const allPosts = await getCollection('posts', ({ data }) => !data.draft);
+const posts = allPosts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+
+<BaseLayout title="ホーム">
+  <div class="hero">
+    <h1>Gentarog</h1>
+    <p class="tagline">"Live your eureka moments with full seriousness." — Mina Eureka</p>
+  </div>
+
+  <p class="section-heading">最新の記事</p>
+
+  <div class="post-list">
+    {posts.length === 0 ? (
+      <p style="color: var(--color-text-muted); font-style: italic;">記事はまだありません。</p>
+    ) : (
+      posts.map((post) => (
+        <PostCard
+          title={post.data.title}
+          slug={post.slug}
+          date={post.data.date}
+          mood={post.data.mood}
+          weather={post.data.weather}
+          tags={post.data.tags}
+          description={post.data.description}
+        />
+      ))
+    )}
+  </div>
+</BaseLayout>
