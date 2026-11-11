@@ -1,0 +1,73 @@
+{
+  "$schema": "https://raw.githubusercontent.com/gentaron/infocollect/HEAD/ecosystem/schema.json",
+  "schema": 1,
+  "name": "Gentarog",
+  "group": "pipeline",
+  "groupLabel": "発信パイプライン",
+  "status": "active",
+  "role": "毎日自動で投稿されるブログ",
+  "stack": "Astro",
+  "produces": [
+    "blog"
+  ],
+  "consumes": [
+    "kb",
+    "formats"
+  ],
+  "upstream": [
+    {
+      "repo": "infocollect",
+      "flows": [
+        "kb"
+      ],
+      "url": "https://github.com/gentaron/infocollect"
+    },
+    {
+      "repo": "IDEAZ",
+      "flows": [
+        "formats"
+      ],
+      "url": "https://github.com/gentaron/IDEAZ"
+    }
+  ],
+  "downstream": [
+    {
+      "repo": "VAIZ",
+      "flows": [
+        "blog"
+      ],
+      "url": "https://github.com/gentaron/VAIZ"
+    },
+    {
+      "repo": "SAIZ",
+      "flows": [
+        "blog"
+      ],
+      "url": "https://github.com/gentaron/SAIZ"
+    },
+    {
+      "repo": "genimage",
+      "flows": [
+        "blog"
+      ],
+      "url": "https://github.com/gentaron/genimage"
+    }
+  ],
+  "siblings": [
+    "IDEAZ",
+    "genesisvault",
+    "VAIZ",
+    "SAIZ",
+    "genimage",
+    "seo"
+  ],
+  "hub": {
+    "repo": "https://github.com/gentaron/infocollect",
+    "map": "https://github.com/gentaron/infocollect/blob/HEAD/ecosystem/README.md",
+    "kb": "https://raw.githubusercontent.com/gentaron/infocollect/HEAD/docs/kb",
+    "mcp": [
+      "infocollect-kb",
+      "forge"
+    ]
+  }
+}
