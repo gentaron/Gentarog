@@ -15,8 +15,11 @@ const { title, description = 'Gentaro — エンジニア、ライター、エ�
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/icons/favicon.ico" sizes="16x16 32x32 48x48" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <meta name="theme-color" content="#f1ddbb" />
     <title>{title} | Gentarog</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
   <body>
     <nav>
@@ -62,5 +65,10 @@ const { title, description = 'Gentaro — エンジニア、ライター、エ�
         applyTheme(next);
       });
     </script>
+  <script is:inline>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/install-worker.js').catch(console.error);
+    }
+  </script>
   </body>
 </html>
